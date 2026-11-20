@@ -45,7 +45,7 @@ jobs:
     - name: Build the Docker image
       run: 
         VERSION=$(date +%s)
-        docker build ./backend --tag ghcr.io/makkospeter/T-rt-nelmi-k-rd-sek-devops-backend:$VERSION
-        docker build ./frontend --tag ghcr.io/makkospeter/T-rt-nelmi-k-rd-sek-devops-frontend:$VERSION
-        docker push ghcr.io/makkospeter/T-rt-nelmi-k-rd-sek-devops-backend:$VERSION
-        docker push ghcr.io/makkospeter/T-rt-nelmi-k-rd-sek-devops-frontend:$VERSION
+        docker build ./backend --tag ghcr.io/makkospeter/Kviz-backend:$VERSION
+        docker build ./frontend --tag ghcr.io/makkospeter/Kviz-frontend:$VERSION
+        docker push ghcr.io/makkospeter/Kviz-backend:$VERSION
+        docker push ghcr.io/makkospeter/Kviz-frontend:$VERSION
